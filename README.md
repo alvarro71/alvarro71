@@ -1,6 +1,7 @@
 <div align="center">
+  <h3>👋 Hola, soy Álvaro (alvarro71)</h3>
   <a href="https://alvarro71.com">
-    <img src="./assets/banner.svg" alt="ALVARRO71 - Indie Game Dev &amp; Vibe-Coder" width="100%" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3200&pause=1000&color=3DFC89&center=true&vCenter=true&width=780&height=52&lines=%F0%9F%92%BB+Welcome+to+alvarro71%27s+Universe!;%F0%9F%8E%AE+Indie+Game+Dev+%26+Modder;%F0%9F%90%A7+Co-Founder+%40+Penguin+Studios;%E2%9A%A1+Cosas+peque%C3%B1as+que+conectan+cosas+grandes" alt="Typing SVG" />
   </a>
 </div>
 
