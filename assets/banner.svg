@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="ALVARRO71 - Indie Game Dev &amp; Vibe-Coder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#031008"/>
+      <stop offset="58%" stop-color="#072112"/>
+      <stop offset="100%" stop-color="#020804"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#3dfc89" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#3dfc89" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#020804" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="horizon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3dfc89" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#3dfc89" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#4dffe8" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#3dfc89" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#3dfc89" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3dfc89" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#3dfc89" stop-opacity="0.45"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="rounded">
+      <rect width="900" height="240" rx="14" ry="14"/>
+    </clipPath>
+    <style>
+      .twinkle { animation: tw 3.2s ease-in-out infinite; transform-origin: center; }
+      .twinkle2 { animation: tw 4.4s ease-in-out 1.1s infinite; transform-origin: center; }
+      .floatPlanet { animation: fp 5.5s ease-in-out infinite; }
+      .pulseTitle { animation: pt 4s ease-in-out infinite; }
+      @keyframes tw { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+      @keyframes fp { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+      @keyframes pt { 0%, 100% { opacity: 0.96; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <!-- Background -->
+    <rect width="900" height="240" fill="url(#bg)"/>
+    <rect width="900" height="240" fill="url(#glow)"/>
+
+    <!-- Synthwave perspective grid at bottom -->
+    <g stroke="url(#gridFade)" stroke-width="1" opacity="0.55">
+      <!-- Horizontal perspective lines -->
+      <line x1="0" y1="168" x2="900" y2="168"/>
+      <line x1="0" y1="180" x2="900" y2="180"/>
+      <line x1="0" y1="196" x2="900" y2="196"/>
+      <line x1="0" y1="216" x2="900" y2="216"/>
+      <!-- Perspective radial lines -->
+      <line x1="450" y1="168" x2="450" y2="240"/>
+      <line x1="400" y1="168" x2="340" y2="240"/>
+      <line x1="500" y1="168" x2="560" y2="240"/>
+      <line x1="350" y1="168" x2="220" y2="240"/>
+      <line x1="550" y1="168" x2="680" y2="240"/>
+      <line x1="300" y1="168" x2="90" y2="240"/>
+      <line x1="600" y1="168" x2="810" y2="240"/>
+      <line x1="250" y1="168" x2="-40" y2="240"/>
+      <line x1="650" y1="168" x2="940" y2="240"/>
+      <line x1="200" y1="168" x2="-160" y2="240"/>
+      <line x1="700" y1="168" x2="1060" y2="240"/>
+    </g>
+
+    <!-- Neon horizon glow line -->
+    <rect x="40" y="167" width="820" height="2" fill="url(#horizon)"/>
+
+    <!-- Floating planet (left) -->
+    <g class="floatPlanet" opacity="0.8">
+      <circle cx="115" cy="96" r="24" fill="#072816" stroke="#3dfc89" stroke-width="2"/>
+      <ellipse cx="115" cy="96" rx="46" ry="12" fill="none" stroke="#4dffe8" stroke-width="2" transform="rotate(-18 115 96)"/>
+      <circle cx="107" cy="88" r="5" fill="#3dfc89" opacity="0.28"/>
+    </g>
+
+    <!-- Floating geometric accent (right) -->
+    <g class="floatPlanet" opacity="0.75">
+      <polygon points="790,72 812,108 768,108" fill="none" stroke="#3dfc89" stroke-width="2"/>
+      <polygon points="790,82 804,104 776,104" fill="#3dfc89" opacity="0.16"/>
+      <circle cx="820" cy="64" r="4" fill="#4dffe8"/>
+    </g>
+
+    <!-- Twinkling stars -->
+    <g fill="#3dfc89">
+      <path class="twinkle" d="M210 38 L213 47 L222 50 L213 53 L210 62 L207 53 L198 50 L207 47 Z"/>
+      <path class="twinkle2" d="M710 34 L712 41 L719 43 L712 45 L710 52 L708 45 L701 43 L708 41 Z" fill="#4dffe8"/>
+      <circle class="twinkle2" cx="155" cy="46" r="2"/>
+      <circle class="twinkle" cx="275" cy="30" r="1.8" fill="#ffffff"/>
+      <circle class="twinkle" cx="635" cy="36" r="2" fill="#ffffff"/>
+      <circle class="twinkle2" cx="845" cy="128" r="2"/>
+      <circle class="twinkle" cx="58" cy="134" r="1.8" fill="#4dffe8"/>
+    </g>
+
+    <!-- Main Title -->
+    <g class="pulseTitle" text-anchor="middle">
+      <text x="450" y="98" font-family="Segoe UI, Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="56" font-weight="900" letter-spacing="4" fill="#ffffff" filter="url(#neonGlow)">
+        ALVARRO<tspan fill="#3dfc89">71</tspan>
+      </text>
+      <text x="450" y="128" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="21" fill="#4dffe8" letter-spacing="1">
+        Indie Game Dev &amp; Vibe-Coder
+      </text>
+      <text x="450" y="154" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5" font-weight="600" fill="#c9d1d9" letter-spacing="3.5">
+        GAME DEV  |  MODS &amp; STREAMING  |  PENGUIN STUDIOS
+      </text>
+    </g>
+
+    <!-- Bottom pill tag -->
+    <g>
+      <rect x="368" y="192" width="164" height="28" rx="14" fill="#020804" fill-opacity="0.82" stroke="#3dfc89" stroke-opacity="0.55" stroke-width="1"/>
+      <circle cx="388" cy="206" r="4" fill="#3dfc89" class="twinkle"/>
+      <text x="458" y="210" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700" fill="#3dfc89">alvarro71.com</text>
+    </g>
+
+    <!-- Outer neon border -->
+    <rect x="1" y="1" width="898" height="238" rx="13" ry="13" fill="none" stroke="#3dfc89" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+</svg>
